@@ -18,10 +18,11 @@ Création d'un dossier servant de base de travail pour faciliter et accélérer 
 
 * Introduction au mixins 
 * Création de sous dossier dans assets/scss
-* Création des prémières mixins : - button
-                                  - center-flex
-                                  - flex
-                                  - square
+* Création des prémières mixins 
+  - button
+  - center-flex
+  - flex
+  - square
 
 ## A faire 
 

@@ -18,7 +18,7 @@ Création d'un dossier servant de base de travail pour faciliter et accélérer 
 
 * Introduction au mixins 
 * Création de sous dossier dans assets/scss
-* Création des prémières mixins 
+* Création des premières mixins 
   - button
   - center-flex
   - flex
@@ -28,6 +28,6 @@ Création d'un dossier servant de base de travail pour faciliter et accélérer 
 
 * Création d'un fichier contenant toutes les variables générales
 * Trouver de nouvelles mixins
-* trouver des vendors a intégrer au dossier ( ex normalize , font awesome , etc )
+* trouver des vendors à intégrer au dossier ( ex normalize , font awesome , etc )
 
 * Intégrer du js au starter pack

@@ -1,0 +1,21 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: get($colors,secondary);
+  @include center-flex();
+}
+
+.test{
+  height: 200px;
+  @include container(1000px);
+  background: blue;
+  @include flex($justify :center);
+  @include media('small-medium'){
+    background-color: red;
+  }
+  &__box{
+    width: 100px;
+    height: 50px;
+    @include button (white,green,10px,10px,150px);
+  }
+}

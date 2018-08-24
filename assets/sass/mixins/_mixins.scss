@@ -1,18 +1,19 @@
-@mixin button($color,$side1,$side2) {
-  -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-          border-radius: 5px;
+@mixin button($color,$bg-color,$side1,$side2,$radius : 5px) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
           text-decoration: none;
           display: flex;
           justify-content: center;
           align-items: center;
+          color: $color;
           transition: 0.7s background ease;
-          background-color: $color;
+          background-color: $bg-color;
           text-decoration: none;
           padding: $side1 $side2;
           &:hover{
-            background-color:darken($color, 10%);
+            background-color:darken($bg-color, 10%);
           }
 }
 
@@ -22,15 +23,29 @@
     justify-content: center;
     align-items: center;
 }
+@mixin container($max: 100%){
+    width        : 100%;
+    max-width    : $max;
+    margin-right : auto;
+    margin-left  : auto;
+}
+
 
 @mixin square($side){
     height:$side;
     width:$side;
 }
 
-@mixin flex ($direction,$justify,$align){
+@mixin flex ($direction: row,$justify: flex-start,$align: flex-start){
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
+}
+
+@mixin media($media){
+    $media-query: get($breakpoints, $media);
+    @media #{$media-query}{
+        @content;
+    }
 }
